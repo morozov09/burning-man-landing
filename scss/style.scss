@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    a{
+        text-decoration: none;
+    }
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header__wrapper-bg{
+    background: url(/img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5px 10px;
+    background-size: calc(100%) calc(100%);
+    background-position: calc(100%) center;
+    background-origin:content-box
+}
+
+.header {
+    &__flexwrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        max-width: 31px;
+        max-height: 48px;
+        // margin-top: 20px;
+        &-item {
+            margin-top: 57px;
+        }
+    }
+    &__menu {
+        display: flex;
+        &-items {
+            padding-left: 69px;
+            // padding-top: 15px;
+            margin-top: 70px;
+        }
+        &-item {
+            font-family: 'Anton';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding-right: 40px;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+    &__contact {
+        font-family: 'Anton';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 26px;
+        text-align: right;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;  
+        text-decoration: none;
+        margin-top: 69px;
+        &-item {
+            color: #FFFFFF;
+        }
+    }
+
+    &__tittle {
+        &_descr {
+            margin-top: 216px;
+            font-family: 'Anton';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 45px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            
+            color: #FFFFFF;
+            &_big {
+                font-size: 100px;
+                line-height: 130px;
+                }
+        }
+        
+    }
+    &__tittle_btn{
+        &-btns {
+            box-sizing: border-box;
+            min-width: 238px;
+            min-height: 57px;
+            left: 216px;
+            top: 521px;
+            border: 1px solid #FFFFFF; 
+            background-color: rgba(28,28,28,0);
+            margin-top: 30px;
+            margin-bottom: 322px;
+        }
+        &-btns:hover {
+            cursor: pointer;
+        }
+        
+    }
+}
+
+.header_tittle_btn-btns-text {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
